@@ -1,4 +1,4 @@
--- Crear base de datos
+
 DROP DATABASE IF EXISTS pd_sebastian_pereira_manglar;
 CREATE DATABASE pd_sebastian_pereira_manglar;
 USE pd_sebastian_pereira_manglar;
@@ -29,9 +29,6 @@ CREATE TABLE transations(
 );
 
 DROP TABLE transations;
-
-
--- INSERT
 
 INSERT INTO customers (number_identification, full_name_customer, phone_customer, address, email)
 VALUES
