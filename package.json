@@ -1,0 +1,23 @@
+{
+  "name": "prueba_riwi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "load": "node loadData.js"
+  },
+  "keywords": [],
+  "author": "Sebastian Pereira",
+  "license": "ISC",
+  "description": "Sistema CRUD para gestión de facturas y pagos",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "csv-parser": "^3.2.0",
+    "express": "^4.21.2",
+    "mysql2": "^3.14.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

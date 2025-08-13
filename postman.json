@@ -1,0 +1,53 @@
+{
+	"info": {
+		"name": "API Clientes - Puerto 3000",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los clientes",
+			"request": {
+				"method": "GET",
+				"url": "http://localhost:3000/api/customers"
+			}
+		},
+		{
+			"name": "Crear cliente",
+			"request": {
+				"method": "POST",
+				"header": [{ "key": "Content-Type", "value": "application/json" }],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 1,\n  \"name\": \"Juan Perez\",\n  \"phone\": \"123456789\",\n  \"address\": \"Calle Falsa 123\",\n  \"email\": \"juan@example.com\"\n}"
+				},
+				"url": "http://localhost:3000/api/customers"
+			}
+		},
+		{
+			"name": "Actualizar cliente",
+			"request": {
+				"method": "PUT",
+				"header": [{ "key": "Content-Type", "value": "application/json" }],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Juan Perez Modificado\",\n  \"phone\": \"987654321\",\n  \"address\": \"Calle Nueva 456\",\n  \"email\": \"juanmod@example.com\"\n}"
+				},
+				"url": "http://localhost:3000/api/customers/1"
+			}
+		},
+		{
+			"name": "Eliminar cliente",
+			"request": {
+				"method": "DELETE",
+				"url": "http://localhost:3000/api/customers/1"
+			}
+		},
+		{
+			"name": "Reporte - Total pagado por cliente",
+			"request": {
+				"method": "GET",
+				"url": "http://localhost:3000/api/reports/total-paid-by-customer"
+			}
+		}
+	]
+}
